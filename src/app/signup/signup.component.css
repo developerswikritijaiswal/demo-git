@@ -1,0 +1,16 @@
+.mainFrm{
+    width:500px;
+    margin: 0 auto;
+}
+.form-group .ng-valid{
+    border: 1px solid #42A948; 
+  }
+  /* .tp-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+ }
+ .tp-margin {
+    margin: 30px;
+ } */

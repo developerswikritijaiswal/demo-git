@@ -1,0 +1,22 @@
+<p *ngIf="show">Hello Directives!</p>
+
+<p [ngStyle]="customCss">Hello</p>
+
+<ul>
+    <li *ngFor="let item of itemslist">{{item.fname}} {{item.lname}}</li>
+</ul>
+
+<ul>
+    <li *ngFor="let list of bevrageList">{{list}}</li>
+</ul>
+
+<ul>
+    <li *ngFor="let demolist of demolists">{{demolist}}</li>
+</ul>
+
+<input [(ngModel)]="view" >
+<button (click)="onClickButton()">Click</button><br/>
+<p>type:{{view}}</p>
+
+<h4 appCustomDirective>Custom Directives</h4>
+<p *appCustomStructural="CustomIf">Custom Structural Directives</p>

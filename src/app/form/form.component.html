@@ -1,0 +1,37 @@
+<form [formGroup]="mainForm" (ngSubmit)="onSubmit()" class="mainFrm">
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }"/>
+        <div *ngIf="submitted && f.firstName.errors"><p>Required</p></div>
+    </div>
+    <div class="form-group">
+        <label for="lname">LastName</label>
+        <input id="lname" type="text" formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }">
+        <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback"><p>LastName Required</p></div>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" class="form-control"  [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+            <div *ngIf="f.email.errors.required" ><p>Email Required</p></div>
+            <div *ngIf="f.email.errors.email"><p>Please fill valid email</p></div>
+        </div>
+        
+    </div>
+    <div class="form-group">
+        <label for="Password">Password</label>
+        <input id="Password" type="password" formControlName="Password" class="form-control"  [ngClass]="{ 'is-invalid': submitted && f.Password.errors }">
+        <div *ngIf="submitted && f.Password.errors" class="invalid-feedback">
+            <div *ngIf="f.Password.errors.required" ><p>Password Required</p></div>
+            <div *ngIf="f.Password.errors.minlength"><p>please Enter minimum 5 character</p></div>
+            <div *ngIf="f.Password.errors.maxlength"><p>please Enter maximum 8 character</p></div>
+        </div>
+    </div>
+        <div class="form-group">
+            <label for="Address">Address</label>
+            <input id="Address" type="text" formControlName="Address" class="form-control"  [ngClass]="{ 'is-invalid': submitted && f.Address.errors }">
+            <div *ngIf="submitted && f.Address.errors" class="invalid-feedback"><p>LastName Required</p></div>
+        </div>
+    <p>{{mainForm.status}}</p>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

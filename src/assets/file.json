@@ -1,0 +1,53 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "username": "swikriti",
+      "password": 123456
+    }
+  ],
+  "SignUp": [
+    {
+      "id": 1,
+      "Fullname": "swikrtii",
+      "Mobile": "swikriti",
+      "email": "123@gmail.com",
+      "password": "123456"
+    },
+    {
+      "Fullname": "abc ddg",
+      "Mobile": 34567,
+      "email": "abc@gmail.com",
+      "Password": "4ei",
+      "id": 2
+    },
+    {
+      "Fullname": "abc ddg",
+      "Mobile": 34567,
+      "email": "abc@gmail.com",
+      "Password": "4ei55",
+      "id": 3
+    },
+    {
+      "Fullname": "abc ddg",
+      "Mobile": 345678,
+      "email": "abc@gmail.com",
+      "Password": "55556",
+      "id": 4
+    },
+    {
+      "Fullname": "",
+      "Mobile": "",
+      "email": "",
+      "Password": "",
+      "id": 5
+    },
+    {
+      "Fullname": "swikriti jaiswal",
+      "Mobile": 7905133016,
+      "email": "abc@gmail.com",
+      "Password": "12345678",
+      "id": 6
+    }
+  ]
+}
