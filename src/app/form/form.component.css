@@ -1,0 +1,7 @@
+.mainFrm{
+    width:500px;
+    margin: 0 auto;
+}
+.form-group .ng-valid{
+    border: 1px solid #42A948; 
+  }

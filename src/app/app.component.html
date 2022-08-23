@@ -1,0 +1,13 @@
+<!-- <app-form></app-form>
+<app-dependency-demo></app-dependency-demo>
+<app-pipes></app-pipes>
+<app-directives></app-directives>
+<app-observable></app-observable> -->
+
+<app-directives></app-directives>
+<router-outlet></router-outlet>
+
+<app-child [firstName]="firstName" [lastName]="lastName" [siblings]="siblings"></app-child>
+
+<app-output (buttonClicked)="parentEventHandler($event)"></app-output>
+<p>{{eventEmitter}}</p>
